@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon" />
+    <link type="Image/x-icon" href="img/favicon.ico" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Заявка</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <header class="top-bar">
+        <div class="buttons">
+          <a href="index.html"
+            ><button class="btn" type="button">Выйти</button></a
+          >
+          <a href="profile.html"
+            ><button class="btn" type="button">Личный кабинет</button></a
+          >
+          <a href="admin.html"
+            ><button class="btn" type="button">Админ</button></a
+          >
+        </div>
+      </header>
+      <div class="applic_field">
+        <h1>Заявка</h1>
+        <h2>Подача заявки</h2>
+
+        <form action="#" method="post" class="applic_form">
+          <label for="address">Адрес</label>
+          <input type="text" name="address" id="address" required />
+
+          <label for="service">Тип услуги</label>
+          <select name="service" id="service" required>
+            <option value="" disabled selected>Выберите услугу</option>
+            <option value="Косметический ремонт">Услуга 1</option>
+            <option value="Капитальный ремонт">Услуга 2</option>
+            <option value="Электромонтаж">Услуга 3</option>
+          </select>
+
+          <label for="date">Дата начала работ</label>
+          <input type="date" name="date" id="date" required />
+
+          <label for="time">Время начала работ</label>
+          <input type="time" name="time" id="time" required />
+
+          <label for="payment">Тип оплаты</label>
+          <select name="payment" id="payment" required>
+            <option value="" disabled selected>Выберите способ оплаты</option>
+            <option value="Наличными">Наличными</option>
+            <option value="Картой">Картой</option>
+          </select>
+
+          <button type="submit" class="btn">Создать</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
